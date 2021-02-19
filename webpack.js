@@ -1,11 +1,10 @@
 module.exports = {
     mode: 'production',
-    entry: 'xml2js',
+    entry: 'sax',
     resolve: {
         fallback: {
-            stream: require.resolve('string_decoder/'),
-            stream: require.resolve('buffer/'),
-            timers: require.resolve('timers-browserify')
+            buffer: require.resolve('buffer/'),
+            stream: require.resolve('stream-browserify')
         }
     }
 }
