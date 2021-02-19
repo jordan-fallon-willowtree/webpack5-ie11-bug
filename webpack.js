@@ -1,6 +1,6 @@
 module.exports = {
     mode: 'production',
-    entry: 'sax',
+    entry: 'stream',
     resolve: {
         fallback: {
             buffer: require.resolve('buffer/'),
